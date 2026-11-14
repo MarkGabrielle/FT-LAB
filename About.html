@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About | My Web Development Portfolio</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+<a class="logo" href="index.html">MyPortfolio</a>
+<button id="menu-toggle" class="menu-toggle" type="button" aria-label="Toggle menu">&#9776;</button>
+<nav id="nav-menu" class="nav-menu">
+<a href="index.html">Home</a>
+<a href="about.html" class="active">About</a>
+<a href="index.html#contact">Contact</a>
+<button id="theme-toggle" class="theme-toggle" type="button">Dark Mode</button>
+</nav>
+</header>
+<main>
+<section class="section">
+<h1>About Me</h1>
+<p>I am a student at Tarlac State University taking Web Development. This website was built and hosted as part of my laboratory activity.</p>
+</section>
+<section class="section">
+<h2>My Skills</h2>
+<div class="filters">
+<button class="filter-btn active" type="button" data-filter="all">All</button>
+<button class="filter-btn" type="button" data-filter="frontend">Front-End</button>
+<button class="filter-btn" type="button" data-filter="tools">Tools</button>
+</div>
+<ul class="skills">
+<li class="skill" data-category="frontend">HTML</li>
+<li class="skill" data-category="frontend">CSS</li>
+<li class="skill" data-category="frontend">JavaScript</li>
+<li class="skill" data-category="tools">Git and GitHub</li>
+<li class="skill" data-category="tools">Web Hosting</li>
+<li class="skill" data-category="tools">Browser Developer Tools</li>
+</ul>
+</section>
+</main>
+<footer class="site-footer">
+<p>&copy; <span id="year"></span> My Web Development Portfolio. All rights reserved.</p>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
