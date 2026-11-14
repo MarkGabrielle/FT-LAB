@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Web Development Portfolio</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+<a class="logo" href="index.html">MyPortfolio</a>
+<button id="menu-toggle" class="menu-toggle" type="button" aria-label="Toggle menu">&#9776;</button>
+<nav id="nav-menu" class="nav-menu">
+<a href="index.html" class="active">Home</a>
+<a href="about.html">About</a>
+<a href="#contact">Contact</a>
+<button id="theme-toggle" class="theme-toggle" type="button">Dark Mode</button>
+</nav>
+</header>
+<main>
+<section class="hero">
+<h1 id="greeting">Welcome to My Website</h1>
+<p>I am a student learning web development with HTML, CSS, and JavaScript.</p>
+<a class="btn" href="#projects">View Projects</a>
+</section>
+<section id="projects" class="section">
+<h2>My Projects</h2>
+<div class="cards">
+<article class="card">
+<h3>Personal Website</h3>
+<p>A responsive multi-page website built with HTML, CSS, and JavaScript.</p>
+</article>
+<article class="card">
+<h3>Contact Form</h3>
+<p>A form that checks the visitor's input before it is submitted.</p>
+</article>
+<article class="card">
+<h3>Theme Switcher</h3>
+<p>A dark and light mode button that remembers the visitor's choice.</p>
+</article>
+</div>
+</section>
+<section id="contact" class="section">
+<h2>Contact Me</h2>
+<form id="contact-form" novalidate>
+<label for="name">Name</label>
+<input type="text" id="name" name="name">
+<span class="error" id="name-error"></span>
+<label for="email">Email</label>
+<input type="email" id="email" name="email">
+<span class="error" id="email-error"></span>
+<label for="message">Message</label>
+<textarea id="message" name="message" rows="4"></textarea>
+<span class="error" id="message-error"></span>
+<button class="btn" type="submit">Send Message</button>
+<p id="form-status" class="status"></p>
+</form>
+</section>
+</main>
+<footer class="site-footer">
+<p>&copy; <span id="year"></span> My Web Development Portfolio. All rights reserved.</p>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
